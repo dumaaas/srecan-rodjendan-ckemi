@@ -209,7 +209,7 @@ body {
 	
 	display: inline-flex;
 	width: 16%;
-	animation: anim 2.5s ease-in-out infinite;
+	animation: anim 7s ease-in-out infinite;
 	transform:  translateY(-120%) rotate(0deg);
 
 }
