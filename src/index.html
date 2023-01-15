@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Srecan rodjendan</title>
+    <link href="/dist/output.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="bg-[#f5dbec] h-screen flex items-center justify-center flex-col">
+        <div id="first-page"
+            class="relative bg-white w-[300px] h-[200px] border-[#595959] border-solid border-[3px] rounded-[8px]">
+            <div class="absolute h-[221px] w-[1px] bg-[#595959] left-[73px] top-[-21px] transform rotate-[-42deg]">
+
+            </div>
+            <div class="absolute h-[221px] w-[1px] bg-[#595959] right-[73px] top-[-21px] transform rotate-[42deg]">
+
+            </div>
+            <button onclick="openLetter()"
+                class="absolute bg-[#0897aa] rounded-[8px] py-[8px] px-[16px] text-white left-[100px] top-[50px]">
+                OTVORI
+            </button>
+        </div>
+        <div id="second-page"
+            class="relative transform translate-x-[-400px] bg-white w-[300px] h-[200px] border-[#595959] border-solid border-[3px] rounded-[8px] hidden">
+            <div class="first-page flex items-center justify-center flex-col gap-[20px] mt-[30px]">
+                <p class="text-[#e99fac] text-[22px] text-center font-semibold pl-[18px] pr-[20px]">CKEMIJEVA
+                    RODJENDANSKA CESTITKA
+                </p>
+
+                <button onclick="openFirstWish()" class=" bg-[#0897aa] rounded-[8px] py-[8px] px-[16px] text-white ">
+                    DALJE
+                </button>
+            </div>
+        </div>
+
+        <div id="third-page"
+            class="relative transform translate-x-[-400px] hidden bg-white w-[300px] h-[200px] border-[#595959] border-solid border-[3px] rounded-[8px] ">
+            <div class="first-page flex items-center justify-center flex-col gap-[20px] mt-[30px]">
+
+                <p class="text-[#e99fac] text-[22px] text-center font-semibold pl-[18px] pr-[20px]">Prvo, zelim ti
+                    zdravlja i mira u ovoj godini
+                </p>
+
+                <button onclick="openSecondWish()" class=" bg-[#0897aa] rounded-[8px] py-[8px] px-[16px] text-white ">
+                    DRUGO
+                </button>
+            </div>
+        </div>
+
+        <div id="fourth-page"
+            class="relative transform translate-x-[-400px] hidden bg-white w-[300px] h-[200px] border-[#595959] border-solid border-[3px] rounded-[8px] ">
+            <div class="first-page flex items-center justify-center flex-col gap-[20px] mt-[30px]">
+
+                <p
+                    class="text-white text-[22px] text-center font-semibold pl-[18px] pr-[20px] py-[6px] bg-[#0897aa] bg-opacity-60">
+                    Drugo, zelim ti velike poslovne uspjehe
+                </p>
+
+                <button onclick="openThirdWish()" class=" bg-[#0897aa] rounded-[8px] py-[8px] px-[16px] text-white ">
+                    TRECE
+                </button>
+            </div>
+        </div>
+
+        <div id="fifth-page"
+            class="relative transform translate-x-[-400px] hidden bg-white w-[300px] h-[200px] border-[#595959] border-solid border-[3px] rounded-[8px] ">
+            <div class="first-page flex items-center justify-center flex-col gap-[10px] mt-[30px]">
+
+                <p
+                    class="text-white text-[22px] text-center font-semibold pl-[18px] pr-[20px] bg-[#0897aa] bg-opacity-60">
+                    Trece, zelim ti da nadjes neku finu i vaspitanu zenu
+                </p>
+
+                <button onclick="openTea()" class=" bg-[#0897aa] rounded-[8px] py-[8px] px-[16px] text-white ">
+                    CETVRTO
+                </button>
+            </div>
+        </div>
+
+        <div id="tea" class="h-[310px] w-screen hidden opacity-0">
+            <p class="text-white text-[22px] text-center font-semibold pl-[18px] pr-[20px] bg-[#0897aa] bg-opacity-60">
+                Za slucaj da je nisi dobro vidio
+            </p>
+
+            <button onclick="openFourthWish()"
+                class="absolute bottom-[210px] left-[100px] bg-[#0897aa] rounded-[8px] py-[8px] px-[16px] text-white ">
+                AJ SAD CETVRTO
+            </button>
+        </div>
+
+        <div id="sixth-page"
+            class="relative transform translate-x-[-400px] hidden bg-white w-[300px] h-[200px] border-[#595959] border-solid border-[3px] rounded-[8px] ">
+            <div class="first-page flex items-center justify-center flex-col gap-[20px] mt-[30px]">
+
+                <p
+                    class="text-white text-[22px] text-center font-semibold pl-[18px] pr-[20px] py-[6px] bg-[#0897aa] bg-opacity-60">
+                    Cetvrto, zelim ti neki skroman auto
+                </p>
+
+                <button onclick="openFifthWish()" class=" bg-[#0897aa] rounded-[8px] py-[8px] px-[16px] text-white ">
+                    PETO
+                </button>
+            </div>
+        </div>
+
+        <div id="seventh-page"
+            class="relative transform translate-x-[-400px] hidden bg-white w-[300px] h-[200px] border-[#595959] border-solid border-[3px] rounded-[8px] ">
+            <div class="first-page flex items-center justify-center flex-col gap-[20px] h-full">
+
+                <p
+                    class="text-white text-[22px] text-center font-semibold pl-[18px] pr-[20px] py-[6px] bg-[#0897aa] bg-opacity-60">
+                    Peto, neki mali stancic
+                </p>
+
+                <button onclick="openSeventhWish()" class=" bg-[#0897aa] rounded-[8px] py-[8px] px-[16px] text-white ">
+                    SESTO
+                </button>
+            </div>
+        </div>
+
+        <div id="eight-page"
+            class="relative transform translate-x-[-400px] hidden bg-white w-[300px] h-[200px] border-[#595959] border-solid border-[3px] rounded-[8px] ">
+            <div class="first-page flex items-center justify-start flex-col gap-[20px] h-full">
+
+                <p
+                    class="text-white text-[22px] text-center font-semibold pl-[18px] pr-[20px] py-[6px] bg-[#0897aa] bg-opacity-60">
+                    Sesto, jedan puni Sasin koncert
+                </p>
+
+                <button onclick="openEightWish()"
+                    class=" bg-[#0897aa] rounded-[8px] py-[8px] px-[16px] text-white absolute top-[90px] right-[12px]">
+                    SEDMO
+                </button>
+            </div>
+        </div>
+
+        <div id="ninth-page"
+            class="relative transform translate-x-[-400px] hidden bg-white w-[300px] h-[200px] border-[#595959] border-solid border-[3px] rounded-[8px] ">
+            <div class="first-page flex items-center justify-center flex-col gap-[20px] h-full">
+                <p
+                    class="text-white text-[22px] text-center font-semibold pl-[18px] pr-[20px] py-[6px] bg-[#0897aa] bg-opacity-60">
+                    Sedmo i poslednje, da ti se ostvari sve sto pozelis
+                </p>
+
+                <button onclick="showEnd()" class=" bg-[#0897aa] rounded-[8px] py-[8px] px-[16px] text-white ">
+                    KRAJ (ima jos)
+                </button>
+            </div>
+        </div>
+        <div id="end" class="bg-[#234] hidden opacity-0 w-screen">
+
+            <div class="firework">
+
+            </div>
+            <div class="firework2">
+
+            </div>
+            <div class="firework3">
+
+            </div>
+
+
+            <header>
+                <p class="i n1 text-[40px]">💰</p>
+                <p class="i n2 text-[40px]">🎂</p>
+                <p class="i n3 text-[40px]">🎉</p>
+                <p class="i n4 text-[40px]">🎁</p>
+                <p class="i n5 text-[40px]">🥳</p>
+                <p class="i n6 text-[40px]">❤️</p>
+                <div class="">
+                    <p
+                        class="text-white text-[22px] text-center font-semibold px-[18px] py-[6px] bg-[#0897aa] bg-opacity-60 ">
+                        Srecan rodjendan bracalaa
+                    </p>
+                </div>
+            </header>
+        </div>
+
+
+    </div>
+</body>
+
+</html>
+
+<script src="/src/main.js" defer></script>
