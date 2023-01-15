@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: "Millimetre";
-    src: url('/src/Millimetre-Regular_web.woff2');
+    src: url('/Millimetre-Regular_web.woff2');
 }
 
 body {
@@ -28,37 +28,37 @@ body {
 }
 
 #fourth-page {
-    background-image: url('/src/epcg.png');
+    background-image: url('/epcg.png');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #fifth-page {
-    background-image: url('/src/tea.jpg');
+    background-image: url('/tea.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #tea {
-    background-image: url('/src/tea.jpg');
+    background-image: url('/tea.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #sixth-page {
-    background-image: url('/src/auto.jpg');
+    background-image: url('/auto.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #seventh-page {
-    background-image: url('/src/stan.jpg');
+    background-image: url('/stan.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #eight-page {
-    background-image: url('/src/sasa.jpg');
+    background-image: url('/sasa.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
